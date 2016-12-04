@@ -2,10 +2,6 @@ FROM centos:7
 MAINTAINER Clinton Beasley cbeasley92@gmail.com
 
 # Installation:
-# Import MongoDB public GPG key and create MongoDB list file
-# RUN rpm --import https://docs.mongodb.com/10gen-gpg-key.asc
-# RUN curl -O https://repo.mongodb.org/yum/redhat/mongodb-org.repo 
-# RUN mv mongodb-org.repo /etc/yum.repos.d/
 RUN echo $'[mongodb-org-3.4]\n\
 name=MongoDB Repository\n\
 baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.4/x86_64/\n\
